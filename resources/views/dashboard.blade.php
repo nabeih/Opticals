@@ -1,6 +1,7 @@
 @extends('layout.home')
 @section('title', 'لوحة التحكم - د. محمد محمود مسلّم')
 @section('contact')
+
 <div id="page-dashboard" class="page active">
 
     <section class="dashboard">
