@@ -1,7 +1,8 @@
 <header>
     <div class="container">
         <div class="logo">
-            {{-- <span class="icon"><img  src="{{ asset('assets/images/logo.jpg') }}"></span> --}}
+            <span class="icon"><a href="{{ route('home') }}"><img style="width: 50px; height: 50px;"
+                        src="{{ asset('assets/images/1000_F_395870759_0kMWyQhrUnvkS1jNSaujSj6aUKKwtKoj.png') }}"></a></span>
             د. <span>محمد محمود مسلّم</span>
         </div>
         {{-- <nav>
@@ -14,12 +15,13 @@
                 التحكم</a>
         </nav> --}}
         <nav>
-    <a class="nav-link" href="{{ route('home') }}#hero">الرئيسية</a>
-    {{-- <a class="nav-link" href="{{ route('home') }}#about">عن العيادة</a> --}}
-    <a class="nav-link" href="{{ route('home') }}#services">الخدمات</a>
-    <a class="nav-link" href="{{ route('home') }}#team">فريق العمل</a>
-    <a class="nav-link btn-nav" href="{{ route('booking.index') }}">📅 حجز موعد</a>
-    <a class="nav-link btn-nav" href="{{ route('dashboard.index') }}" style="background:#1e40af;">📊 لوحة التحكم</a>
-</nav>
+            <a class="nav-link" href="{{ route('home') }}#hero">الرئيسية</a>
+            {{-- <a class="nav-link" href="{{ route('home') }}#about">عن العيادة</a> --}}
+            <a class="nav-link" href="{{ route('home') }}#services">الخدمات</a>
+            <a class="nav-link" href="{{ route('home') }}#team">فريق العمل</a>
+            <a class="nav-link btn-nav" href="{{ route('booking.index') }}">📅 حجز موعد</a>
+            <a class="nav-link btn-nav" href="{{ route('dashboard.index') }}" style="background:#1e40af;">📊 لوحة
+                التحكم</a>
+        </nav>
     </div>
 </header>

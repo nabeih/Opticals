@@ -694,3 +694,51 @@ footer {
 section {
     display: block !important;
 }
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    transition: all 0.25s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    border-color: #3b82f6;
+    background: #f8fafc;
+}
+
+.stat-card .number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.stat-card .label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+}
+.drimg{
+        position: relative; 
+        transform: translate(-200%, -150%);
+        left: 0;
+         background-color: #0b7c74;
+        width: 100px;
+        height: 100px;
+}

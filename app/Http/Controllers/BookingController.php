@@ -36,7 +36,7 @@ class BookingController
 
                 'complaint_type' => ['required', 'in:فحص شامل,استشارة,عملية'],
                 'complaint_description' => ['nullable', 'string'],
-                'pathfile' => ['nullable', 'file', 'mimes:jpeg,png,pdf,doc,docx', 'max:2048'],
+                'pathfile' => ['nullable', 'file', 'mimes:jpeg,png,pdf,doc,docx', 'max:10048'],
 
                 'notes' => ['nullable', 'string'],
 
@@ -53,9 +53,15 @@ class BookingController
                 'complaint_type.in' => 'نوع الشكوى غير صالح.',
                 'pathfile.file' => 'الملف المرفق يجب أن يكون ملفًا صالحًا.',
                 'pathfile.mimes' => 'الملف المرفق يجب أن يكون من نوع: jpeg, png, pdf, doc, docx.',
-                'pathfile.max' => 'حجم الملف المرفق يجب ألا يتجاوز 2 ميغابايت.',
+                'pathfile.max' => 'حجم الملف المرفق يجب ألا يتجاوز 10 ميغابايت.',
             ]
         );
+        $pathfile = $request->file('pathfile');
+        if ($pathfile) {
+            $pathfileName = time() . '_' . $pathfile->getClientOriginalName();
+            $pathfile->move(public_path('uploads'), $pathfileName);
+            $validated['pathfile'] = 'uploads/' . $pathfileName;
+        }
         Patient::create($validated);
 
         return redirect()->route('booking.index')->with('success', 'تم استلام طلبك بنجاح! سيتم التواصل معك قريباً لتأكيد الموعد.');

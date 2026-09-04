@@ -22,7 +22,8 @@
     <header>
         <div class="container">
             <div class="logo">
-                <span class="icon">👁️</span>
+                <span class="icon"><a href="{{ route('home') }}"><img style="width: 50px; height: 50px;"
+                            src="{{ asset('assets/images/1000_F_395870759_0kMWyQhrUnvkS1jNSaujSj6aUKKwtKoj.png') }}"></a></span>
                 د. <span>محمد محمود مسلّم</span>
             </div>
             <nav>
@@ -68,7 +69,7 @@
                     <h3>بيانات المريض</h3>
                     <p class="sub">جميع البيانات محفوظة بشكل آمن وتستخدم فقط لأغراض طبية</p>
 
-                    <form method="POST" action="{{ route('booking.store') }}">
+                    <form method="POST" action="{{ route('booking.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-row">
                             <div class="form-group">

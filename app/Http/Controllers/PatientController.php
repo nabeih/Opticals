@@ -25,4 +25,43 @@ class PatientController
         $patient = Patient::with('Patient_session')->findOrFail($id);
         return view('patient', compact('patient'));
     }
+
+    // public function updateStatus(Request $request, $id)
+    // {
+    //     try {
+    //         $patient = Patient::findOrFail($id);
+    //         $patient->status = $request->input('status');
+    //         $patient->save();
+
+    //         return response()->json([
+    //             'success' => true,
+    //             'message' => 'تم التحديث بنجاح'
+    //         ]);
+    //     } catch (\Throwable $e) {
+    //         // سيقوم هذا السطر بإجبار لارافل على طباعة الخطأ الحقيقي مباشرة على الشاشة
+    //         return response()->json([
+    //             'success' => false,
+    //             'error' => $e->getMessage(),
+    //             'line' => $e->getLine(),
+    //             'file' => $e->getFile()
+    //         ], 500);
+    //     }
+    // }
+    public function updateStatus(Request $request, $id)
+    {
+        $patient = Patient::findOrFail($id);
+
+        $patient->update([
+            'status' => $request->status
+        ]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'تم تحديث الحالة بنجاح'
+        ]);
+    }
+
+    public function exportpatients() {
+        
+    }
 }

@@ -2,9 +2,10 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>👁️ د. محمد محمود مسلّم</h4>
+                <h4> د. محمد محمود مسلّم<a href={{ route('home') }}><img style="width: 70px" src="{{asset('assets/images/1000_F_395870759_0kMWyQhrUnvkS1jNSaujSj6aUKKwtKoj.png')}}"></a></h4>
                 <p>استشاري طب وجراحة العيون</p>
                 <p>زمالة الكلية الملكية للجراحين</p>
+                <p>البرد العربي ـ البرد الاردني ـ البرد الدولي </p>
             </div>
             <div class="footer-col">
                 <h4>روابط سريعة</h4>
@@ -23,6 +24,11 @@
         </div>
         <div class="footer-bottom">
             <p>© 2026 جميع الحقوق محفوظة - د. محمد محمود مسلّم</p>
+        </div>
+        <div class="footer-bottom">
+            <a style="color: wheat" href="https:github.com/nabeih/">
+                <p>© تصميم وبرمجة المبرمج: نبيه الحداد </p>
+            </a>
         </div>
     </div>
 </footer>

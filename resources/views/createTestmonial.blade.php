@@ -17,7 +17,7 @@
 
             <!-- حقل الاسم -->
             <div class="form-group">
-                <label for="name">الاسم الكامل <span class="required">*</span></label>
+                <label for="name">الاسم <span class="required">*</span></label>
                 <div class="input-with-icon">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" id="name" name="name" placeholder="أدخل اسمك الكريم..." required>

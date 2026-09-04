@@ -569,6 +569,20 @@
                             style="font-weight: 400; font-size: 13px; color: var(--text-light);">{{ $patient->notes ?: 'لا توجد ملاحظات' }}</span>
                     </div>
 
+                    <div class="sidebar-info-item">
+                        <span class="label">اي مرفق</span>
+                        @if($patient->pathfile)
+                            <a class="value" href="{{ asset($patient->pathfile) }}" target="_blank"
+                                style="font-weight: 400; font-size: 13px; color: var(--text-light);">
+                                {{ basename($patient->pathfile) }}
+                            </a>
+                        @else
+                            <span class="value" style="font-weight: 400; font-size: 13px; color: var(--text-light);">
+                                لا توجد ملفات مرفقة
+                            </span>
+                        @endif
+                    </div>
+
                     <!-- أزرار إضافية سريعة -->
                     <div class="sidebar-actions no-print">
                         <a class="btn-primary" style="background: var(--primary-teal); color: #fff;"

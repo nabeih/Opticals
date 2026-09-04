@@ -60,37 +60,38 @@
 
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-eye"></i></div>
                     <h3>فحص العيون الشامل</h3>
                     <p>فحص دقيق لقوة الإبصار وضغط العين وشبكية العين</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-droplet"></i></div>
                     <h3>المياه البيضاء</h3>
                     <p>عمليات استخراج العدسة باستخدام أحدث التقنيات</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
                     <h3>تصحيح الإبصار بالليزك</h3>
                     <p>علاج قصر النظر والاستجماتيزم باستخدام الليزر</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-shield-halved"></i></div>
                     <h3>المياه الزرقاء</h3>
                     <p>تشخيص وعلاج ارتفاع ضغط العين</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-child"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-child"></i></div>
                     <h3>فحص العيون للأطفال</h3>
                     <p>فحص مبكر للأطفال للكشف عن مشاكل الإبصار</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="icon"><i class="fa-solid fa-notes-medical"></i></div>
+                    <div class="icon"><i style="color: rgb(105, 105, 249)" class="fa-solid fa-notes-medical"></i></div>
                     <h3>استشارات ما قبل العمليات</h3>
                     <p>تقييم شامل قبل أي تدخل جراحي</p>
                 </div>
@@ -114,9 +115,10 @@
                     <p>خبرة 15 عاماً في جراحات العيون</p>
                 </div>
                 <div class="team-card">
-                    <div class="avatar">👩‍⚕️</div>
-                    <h4>د. سارة أحمد</h4>
-                    <span class="role">أخصائية البصريات</span>
+                    <img width="150px" height="150px" src="{{ asset('assets/images/doctorZ.jpg') }}">
+
+                    <h4>عبدالرحمن عبدو </h4>
+                    <span class="role">الاخصائي الاول لمركز بصريات الكحال ومركز مسلم الطبي</span>
                     <p>خبرة 8 سنوات في تشخيص وعلاج مشاكل الإبصار</p>
                 </div>
                 <div class="team-card">
